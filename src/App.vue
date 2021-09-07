@@ -1,15 +1,27 @@
 <template>
   <div id="app">
-    <Header></Header>
+    <Header/>
+    <main>
+      <section>
+        <Content/>
+      </section>
+      <section>
+        <Dc/>
+      </section>
+    </main>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header.vue';
+import Content from '@/components/Content.vue';
+import Dc from '@/components/Dc.vue'
 export default {
   name: 'App',
   components: {
     Header,
+    Content,
+    Dc,
   }
 }
 </script>
@@ -32,8 +44,15 @@ img {
 
 a {
   text-decoration: none;
-  padding: 0 5px;
   color: darkgray;
+}
+
+ul {
+  list-style: none;
+}
+
+.row {
+  display: flex;
 }
 
 #app {

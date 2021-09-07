@@ -77,7 +77,6 @@ export default {
 
 <style scoped>
     .row {
-        display: flex;
         align-items: center;
     }
 
@@ -94,9 +93,12 @@ export default {
     }
 
     ul {
-        list-style: none;
         display: flex;
         text-transform: uppercase;
+    }
+
+    a {
+      padding: 0 5px;
     }
     
 </style>
