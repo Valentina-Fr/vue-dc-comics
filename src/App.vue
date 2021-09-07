@@ -30,45 +30,5 @@ export default {
 </script>
 
 <style lang="scss">
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.font-white {
-  color: white;
-}
-
-.font-dc{
-  color: #0282f9;
-}
-
-img {
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: darkgray;
-}
-
-ul {
-  list-style: none;
-}
-
-.row {
-  display: flex;
-}
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import "@/assets/scss/style.scss";
 </style>
