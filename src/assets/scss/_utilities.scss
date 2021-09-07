@@ -2,6 +2,10 @@
     color: white;
 }
   
-.font-dc{
-    color: #0282f9;
+.font-dc {
+    color: $dc-color;
+}
+
+.dc-background {
+    background-color: $dc-color;
 }

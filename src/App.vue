@@ -6,6 +6,9 @@
         <Content/>
       </section>
       <section>
+        <Nav/>
+      </section>
+      <section>
         <Dc/>
       </section>
     </main>
@@ -18,6 +21,7 @@ import Header from '@/components/Header.vue';
 import Content from '@/components/Content.vue';
 import Dc from '@/components/Dc.vue';
 import Footer from '@/components/Footer.vue';
+import Nav from '@/components/Nav.vue';
 export default {
   name: 'App',
   components: {
@@ -25,6 +29,7 @@ export default {
     Content,
     Dc,
     Footer,
+    Nav
   }
 }
 </script>
