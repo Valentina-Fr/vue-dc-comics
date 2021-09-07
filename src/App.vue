@@ -9,19 +9,22 @@
         <Dc/>
       </section>
     </main>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header.vue';
 import Content from '@/components/Content.vue';
-import Dc from '@/components/Dc.vue'
+import Dc from '@/components/Dc.vue';
+import Footer from '@/components/Footer.vue';
 export default {
   name: 'App',
   components: {
     Header,
     Content,
     Dc,
+    Footer,
   }
 }
 </script>
@@ -36,6 +39,14 @@ export default {
 .container {
   max-width: 960px;
   margin: 0 auto;
+}
+
+.font-white {
+  color: white;
+}
+
+.font-dc{
+  color: #0282f9;
 }
 
 img {

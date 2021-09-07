@@ -77,6 +77,7 @@ export default {
     .bg-logo {
         background-image: url('../assets/img/dc-logo-bg.png');
         background-size: cover;
+        background-position: center;
     }
 
     h4 {
