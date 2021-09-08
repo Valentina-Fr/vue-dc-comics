@@ -13,10 +13,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    figure {
+    #card {
         width: 120px;
         margin: 20px;
-        figcaption{
+        figcaption {
             font-size: 0.8rem;
             text-transform: uppercase;
         }

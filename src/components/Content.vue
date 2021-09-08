@@ -2,6 +2,7 @@
   <div id="content">
       <div class="container">
           <Card v-for="(serie, index) in series" :key="index" :serie="serie"/>
+          <div class="btn dc-background font-white pointer">LOAD MORE</div>
       </div>
   </div>
 </template>
