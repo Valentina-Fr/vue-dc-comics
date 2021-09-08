@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header/>
+    <Jumbo/>
     <main>
       <section>
         <Content/>
@@ -22,6 +23,7 @@ import Content from './components/Content.vue';
 import Dc from './components/Dc.vue';
 import Footer from './components/Footer.vue';
 import Nav from './components/Nav.vue';
+import Jumbo from './components/Jumbo.vue';
 export default {
   name: 'App',
   components: {
@@ -29,7 +31,8 @@ export default {
     Content,
     Dc,
     Footer,
-    Nav
+    Nav,
+    Jumbo,
   }
 }
 </script>

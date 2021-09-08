@@ -1,8 +1,11 @@
 <template>
   <div id="content">
       <div class="container">
-          <Card v-for="(serie, index) in series" :key="index" :serie="serie"/>
-          <div class="btn dc-background font-white pointer">LOAD MORE</div>
+          <div class="btn dc-background font-white">CURRENT SERIES</div>
+          <div class="row">
+            <Card v-for="(serie, index) in series" :key="index" :serie="serie"/>
+            <div class="btn dc-background font-white pointer">LOAD MORE</div>
+          </div>
       </div>
   </div>
 </template>
@@ -109,14 +112,24 @@ export default {
 
 <style scoped lang="scss">
     #content {
-        background-color: black;
-        color: white;
-        font-size: 20px;
-        padding: 20px 0;
-        .container {
-            display: flex;
+      background-color: black;
+      color: white;
+      font-size: 20px;
+      padding: 20px 0;
+      position: relative;
+
+        .row {
             justify-content: center;
             flex-wrap: wrap;
         }
+    }
+
+    .container>.btn {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      transform: translateY(-50%);
+      font-size: 1rem;
+      font-weight: bold;
     }
 </style>
