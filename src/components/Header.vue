@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
         <div class="col-4">
-            <img src="@/assets/img/dc-logo.png" alt="logo" id="logo">
+            <img src="../assets/img/dc-logo.png" alt="logo" id="logo">
         </div>
         <div class="col-8">
             <ul>

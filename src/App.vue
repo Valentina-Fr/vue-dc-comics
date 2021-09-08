@@ -17,11 +17,11 @@
 </template>
 
 <script>
-import Header from '@/components/Header.vue';
-import Content from '@/components/Content.vue';
-import Dc from '@/components/Dc.vue';
-import Footer from '@/components/Footer.vue';
-import Nav from '@/components/Nav.vue';
+import Header from './components/Header.vue';
+import Content from './components/Content.vue';
+import Dc from './components/Dc.vue';
+import Footer from './components/Footer.vue';
+import Nav from './components/Nav.vue';
 export default {
   name: 'App',
   components: {
@@ -35,5 +35,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/assets/scss/style.scss";
+@import "./assets/scss/style.scss";
 </style>
