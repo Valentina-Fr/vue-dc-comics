@@ -6,7 +6,7 @@
         </div>
         <div class="col-8">
             <ul>
-                <li v-for="(link, index) in links" :key="index"><a :href="link.url">{{link.text}}</a></li>
+                <li :class="{ active: link.current }" v-for="(link, index) in links" :key="index"><a :href="link.url">{{link.text}}</a></li>
             </ul>
         </div>
     </div>
@@ -75,7 +75,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+  @import "../assets/scss/_vars.scss";
     .row {
         align-items: center;
     }
@@ -88,17 +89,27 @@ export default {
         width: calc(100% / 12 * 4);
     }
 
-    #logo {
-        padding: 10px 0;
-    }
-
     ul {
         display: flex;
         text-transform: uppercase;
     }
 
-    a {
-      padding: 0 5px;
+    li {
+      padding: 50px 5px;
+      margin-top: 3px;
+      a {
+        font-weight: bold;
+        font-size: 0.8rem;
+        color: #4e585f;
+      }
+    }
+
+    .active a {
+      color: $dc-color;
+    }
+
+    .active {
+      border-bottom: 3px solid $dc-color;
     }
     
 </style>
